@@ -1,0 +1,44 @@
+<ion-side-menus>
+  <!-- Center content -->
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+<!--       <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button> -->
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="fade-in"></ion-nav-view>
+  </ion-pane>
+
+  <!-- Left menu -->
+  <ion-side-menu side="left">
+    <ion-content>
+        <ion-list>
+            <a class="item item-avatar" href="#/app/{{currentUser.name}}">
+                <img src="img/default.png" alt="">
+                <h2>{{currentUser.name}}</h2>
+                <p>{{currentUser.profile || 'Add your profile'}}</p>
+            </a>
+            <a class="item item-icon-left" href="#/app/index">
+                <i class="icon ion-ios7-person"></i>
+                Home
+              </a>
+
+              <a class="item item-icon-left" href="#/app/{{user.name}}/questions">
+                <i class="icon ion-clipboard"></i>
+                Questions
+              </a>
+              <a class="item item-icon-left" href="#/app/{{user.name}}/friends">
+                <i class="icon ion-person-stalker"></i>
+                Friends
+              </a>
+              <a class="item item-icon-left" href="#/app/{{user.name}}/settings">
+                <i class="icon ion-gear-b"></i>
+                Settings
+              </a>
+              <a class="item item-icon-left item-devider" href="#/logout">
+                <i class="icon ion-log-out"></i>
+                Logout
+              </a>
+        </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

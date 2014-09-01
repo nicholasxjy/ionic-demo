@@ -1,0 +1,8 @@
+2014-08-31 13:49:27.616 yesorno[19459:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-31 13:49:27.665 yesorno[19459:70b] Unlimited access to network resources
+2014-08-31 13:49:27.860 yesorno[19459:70b] [CDVTimer][keyboard] 0.083983ms
+2014-08-31 13:49:27.861 yesorno[19459:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-31 13:49:27.861 yesorno[19459:70b] [CDVTimer][statusbar] 0.420988ms
+2014-08-31 13:49:27.861 yesorno[19459:70b] [CDVTimer][TotalPluginStartup] 1.352012ms
+2014-08-31 13:49:28.136 yesorno[19459:70b] Resetting plugins due to page load.
+2014-08-31 13:49:28.382 yesorno[19459:70b] Finished load of: file:///Users/nicholas_xue/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/99BB71ED-C0F3-470C-9CD1-48944DE1CF8F/yesorno.app/www/index.html

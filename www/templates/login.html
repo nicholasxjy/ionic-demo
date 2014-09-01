@@ -1,0 +1,22 @@
+<ion-view title="login">
+    <ion-content scroll="false">
+        <div class="yn-container">
+            <div class="yn-container-inner">
+                <div class="form-wrapper animated bounceInDown">
+                    <form name="loginForm" novalidate ng-submit="doLogin(user)">
+                        <div class="list list-inset">
+                          <label class="item item-input">
+                            <input type="text" placeholder="Username" ng-model="user.name" min-length="6" max-length="20" required>
+                          </label>
+                          <label class="item item-input">
+                            <input type="password" placeholder="Password" ng-model="user.password" min-length="6" max-length="30" required>
+                          </label>
+                            <a href="#/forgetpass">Forget Password?</a>
+                            <button ng-disabled="loginForm.$invalid" type="submit" class="button button-block button-positive">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

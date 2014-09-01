@@ -1,0 +1,18 @@
+<ion-view title="forget password">
+    <ion-content scroll="false">
+        <div class="yn-container">
+            <div class="yn-container-inner">
+                <div class="form-wrapper animated bounceInDown">
+                    <form name="forgetpassForm" novalidate ng-submit="doForgetPass(user)">
+                        <div class="list list-inset">
+                          <label class="item item-input">
+                            <input type="email" placeholder="Email Address" ng-model="user.email" required>
+                          </label>
+                            <button ng-disabled="forgetpassForm.$invalid" type="submit" class="button button-block button-positive">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

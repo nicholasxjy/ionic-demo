@@ -1,0 +1,25 @@
+<ion-view title="sign up">
+    <ion-content scroll="false">
+        <div class="yn-container">
+            <div class="yn-container-inner">
+                <div class="form-wrapper animated bounceInDown">
+                    <form name="signUpForm" novalidate ng-submit="doSignUp(user)">
+                        <div class="list list-inset">
+                          <label class="item item-input">
+                            <input name="name" type="text" placeholder="Username" ng-model="user.name" min-length="6" max-length="20" required>
+                          </label>
+                          <label class="item item-input">
+                            <input name="email" type="email" placeholder="Email Address" ng-model="user.email" required>
+                          </label>
+                          <label class="item item-input">
+                            <input name="password" type="password" placeholder="Password" ng-model="user.password" min-length="6" max-length="30" required>
+                          </label>
+                            <button ng-disabled="signUpForm.$invalid" type="submit" class="button button-block button-positive">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div ng-include="'templates/notification.html'"></div>
+    </ion-content>
+</ion-view>
