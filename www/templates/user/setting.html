@@ -1,16 +1,11 @@
-
-<ion-view title="Profile Settings">
-<ion-nav-buttons side="left">
-  <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-</ion-nav-buttons>
-<ion-nav-buttons side="right">
-  <a href="#/app/notifications" class="button button-icon icon ion-ios7-bell-outline"></a>
-  <span class="badge badge-assertive badge-notification">0</span>
-</ion-nav-buttons>
-  <ion-content>
+<ion-view>
+    <ion-nav-buttons side="left">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content>
       <div class="card">
-        <a class="item item-avatar-right" href="#/setting/avatar">
-          <img src="img/default.png" alt="">
+        <a class="item item-avatar-right" href="#/app/setting/avatar">
+          <img src="img/default.png" alt="avatar">
           User Avatar
         </a>
 
@@ -19,22 +14,22 @@
           <p class="icon setting-tip">Nicholas</p>
         </a>
 
-        <a class="item item-icon-right" href="#">
+        <a class="item item-icon-right" href="#/app/setting/gender">
           Gender
           <p class="icon setting-tip">保密</p>
         </a>
 
-        <a class="item item-icon-right" href="#">
+        <a class="item item-icon-right" href="#/app/setting/location">
           Location
           <p class="icon setting-tip">其他</p>
         </a>
-        <a class="item item-icon-right" href="#">
+        <a class="item item-icon-right" href="#/app/setting/profile">
           Profile
           <p class="icon setting-tip">Introduce youself!</p>
         </a>
       </div>
       <div class="card">
-        <a href="" class="item item-icon-right">
+        <a href="#/app/{{currentUser.name}}/qrcode" class="item item-icon-right">
           Your QR code
           <i class="icon ion-grid"></i>
         </a>

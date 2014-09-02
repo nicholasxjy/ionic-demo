@@ -34,6 +34,10 @@ angular.module('app.controllers', ['app.services'])
                 })
         }
     })
+    .controller('ForgetPassController', function($scope) {
+
+    })
+
     .controller('AppController', function($rootScope, $scope, $state, Auth) {
         Auth.currentUser()
             .then(function(user) {
@@ -54,4 +58,7 @@ angular.module('app.controllers', ['app.services'])
             Auth.logout();
             $state.go('welcome');
         }
+    })
+    .controller('SettingController', function($scope) {
+
     })

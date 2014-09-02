@@ -19,6 +19,14 @@ angular.module('yornApp', ['ionic', 'app.controllers'])
 })
 .config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
+  // $rootScope.$on('$stateChangeStart', function() {
+  //   $ionicLoading.show({
+  //     templateUrl: 'templates/loading.html'
+  //   });
+  // });
+  // $rootScope.$on('$stateChangeSuccess', function() {
+  //   $ionicLoading.hide();
+  // })
   $stateProvider.
     state('welcome', {
       url: '/',
@@ -55,10 +63,11 @@ angular.module('yornApp', ['ionic', 'app.controllers'])
       }
     })
     .state('app.setting', {
-      url: '/settings',
+      url: '/setting',
       views: {
         "menuContent": {
-          templateUrl: 'templates/user/setting.html'
+          templateUrl: 'templates/user/setting.html',
+          controller: 'SettingController'
         }
       }
     })
@@ -70,13 +79,57 @@ angular.module('yornApp', ['ionic', 'app.controllers'])
         }
       }
     })
-    .state('app.user.questions', {
-      url: '/questions',
+    .state('app.userquestions', {
+      url: '/:name/questions',
       views: {
         "menuContent": {
           templateUrl: 'templates/user/questions.html'
         }
       }
+    })
+    .state('app.userqrcode', {
+        url: '/:name/qrcode',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/user/qrcode.html',
+                controller: 'QRCodeController'
+            }
+        }
+    })
+    .state('app.setavatar', {
+        url: '/setting/avatar',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/user/setting-avatar.html'
+            }
+        }
+    })
+    .state('app.setgender', {
+        url: '/setting/gender',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/user/gender.html',
+                controller: 'SetGenderController'
+            }
+        }
+    })
+    .state('app.setlocation', {
+        url: '/setting/location',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/user/location.html',
+                controller: 'SetLocationController'
+            }
+        }
+    })
+    .state('app.setprofile', {
+        url: '/setting/profile',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/user/profile.html',
+                controller: 'SetProfileController'
+            }
+        }
     })
 
 })
