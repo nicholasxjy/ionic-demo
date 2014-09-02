@@ -37,7 +37,7 @@ angular.module('app.controllers', ['app.services'])
     .controller('AppController', function($rootScope, $scope, $state, Auth) {
         Auth.currentUser()
             .then(function(user) {
-                console.log(user);
+                // console.log(user);
                 $scope.currentUser = {
                    id: user.id,
                    name: user.attributes.username,
@@ -48,5 +48,10 @@ angular.module('app.controllers', ['app.services'])
                 };
             }, function(error) {
                 alert(error);
-            })
+            });
+
+        $scope.doLogout = function() {
+            Auth.logout();
+            $state.go('welcome');
+        }
     })

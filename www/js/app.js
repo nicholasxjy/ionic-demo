@@ -54,6 +54,14 @@ angular.module('yornApp', ['ionic', 'app.controllers'])
         }
       }
     })
+    .state('app.setting', {
+      url: '/settings',
+      views: {
+        "menuContent": {
+          templateUrl: 'templates/user/setting.html'
+        }
+      }
+    })
     .state('app.user', {
       url: '/:name',
       views: {
@@ -70,4 +78,5 @@ angular.module('yornApp', ['ionic', 'app.controllers'])
         }
       }
     })
+
 })

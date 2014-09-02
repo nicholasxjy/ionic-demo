@@ -11,29 +11,37 @@
   <ion-side-menu side="left">
     <ion-content>
         <ion-list>
-            <a class="item item-avatar" href="#/app/{{currentUser.name}}">
+            <a class="item item-avatar" href="#/app/settings">
                 <img src="img/default.png" alt="">
                 <h2>{{currentUser.name}}</h2>
                 <p>{{currentUser.profile || 'Add your profile'}}</p>
             </a>
-            <a class="item item-icon-left" href="#/app/index">
-                <i class="icon ion-ios7-person"></i>
+              <a class="item item-icon-left" href="#/app/index">
+                <i class="icon ion-home"></i>
                 Home
               </a>
+              <a class="item item-icon-left" href="#/app/{{currentUser.name}}">
+                <i class="icon ion-ios7-person"></i>
+                Your Page
+              </a>
 
-              <a class="item item-icon-left" href="#/app/{{user.name}}/questions">
+              <a class="item item-icon-left" href="#/app/{{currentUser.name}}/questions">
                 <i class="icon ion-clipboard"></i>
                 Questions
               </a>
-              <a class="item item-icon-left" href="#/app/{{user.name}}/friends">
+              <a class="item item-icon-left" href="#/app/{{currentUser.name}}/answers">
+                <i class="icon ion-android-forums"></i>
+                Answers
+              </a>
+              <a class="item item-icon-left" href="#/app/{{currentUser.name}}/friends">
                 <i class="icon ion-person-stalker"></i>
                 Friends
               </a>
-              <a class="item item-icon-left" href="#/app/{{user.name}}/settings">
+              <a class="item item-icon-left" href="#/app/{{currentUser.name}}/settings">
                 <i class="icon ion-gear-b"></i>
                 Settings
               </a>
-              <a class="item item-icon-left item-devider" href="#/logout">
+              <a class="item item-icon-left item-devider" ng-click="doLogout()">
                 <i class="icon ion-log-out"></i>
                 Logout
               </a>
