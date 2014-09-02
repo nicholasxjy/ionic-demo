@@ -1,4 +1,98 @@
 /* Empty. Add your own CSS if you like */
+* {
+    font-size: 14px;
+    font-family: "Roboto";
+}
+.pane-danger {
+    background: #E74C3C;
+}
+.pane-inner {
+    padding: 44px 15px;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+.pane-overlay {
+    background-color: rgba(0,0,0,.75);
+}
+
+.card.card-form {
+    border-radius: 6px;
+    margin-top: 60px;
+    padding: 0 10px 15px 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.lg-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.small-tip {
+    font-size: 12px;
+    font-weight: 300;
+    color: #BDC3C7;
+}
+.yn-top {
+    margin-top: 30px;
+}
+.yn-middle {
+    margin-top: 100px;
+}
+.yn-bottom {
+    position: fixed;
+    bottom: 30px;
+}
+.twitter-link {
+    font-style: italic;
+}
+/* override css */
+.button.btn {
+    border-radius: 6px;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+}
+.button.button-positive {
+    background-color: #1ABC9C;
+}
+.button.button-outline {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.item.item-input{
+    border: 1px solid #BDC3C7;
+    margin-top: 10px;
+    border-radius: 6px;
+    height: 44px;
+
+}
+.item.item-input input {
+    color: #2C3E50;
+}
+/*******end override ******/
+
+.forget-link {
+    display:block;
+    color: #16A085;
+    font-size: 12px;
+    width: 60%;
+    margin: 8px auto;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.btn-close-form {
+    color: #2C3E50;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    font-size: 20px;
+}
+
+
 .badge-notification {
     position:relative;
     top: 0;
